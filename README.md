@@ -12,20 +12,7 @@ Docker version 20.10.17
 Ответьте на вопрос: Можно ли в контейнере собрать ядро?
 Собранный образ необходимо запушить в docker hub и дать ссылку на ваш репозиторий.
 
-Установка Docker
-```
-Устаналиваем пререквизиты yum install -y yum-utils device-mapper-persistent-data lvm2
-Добавляем репозиторий yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-Устанавливаем Docker и дополнительные компоненты yum install docker-ce docker-ce-cli containerd.io
-Устаналиваем в автозагрузку и стартуем Docker systemctl enable docker; systemctl start docker
-Данный алгоритм установки взять с официального сайта Docker.
-```
-Установка Docker-compose
-```
-curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
 
-```
 ```
 Теоретические вопросы
 
