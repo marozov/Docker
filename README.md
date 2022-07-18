@@ -42,7 +42,7 @@ Docker version 20.10.17
 
 Видим наш образы и наши контейнеры:
 ```
-marozov@imac-marozov Docker % docker images
+docker images
 
 REPOSITORY                                                TAG                                                                          IMAGE ID       CREATED         SIZE
 test                                                      latest                                                                       a83cd4698c30   2 hours ago     204MB
@@ -50,7 +50,7 @@ marozov/test                                              test                  
 mhiro2/kea-dhcp-server                                    latest                                                                       779cef996b34   4 years ago     69.5MB
 ```
 ```
-marozov@imac-marozov Docker % docker ps
+docker ps
 CONTAINER ID   IMAGE                           COMMAND                  CREATED          STATUS          PORTS                                    NAMES
 c50259d69b52   marozov/test:test               "nginx -g 'daemon of…"   8 seconds ago    Up 7 seconds    80/tcp, 443/tcp, 0.0.0.0:12345->81/tcp   stoic_galois
 e3ba3997fedf   test                            "nginx -g 'daemon of…"   35 minutes ago   Up 35 minutes   443/tcp, 0.0.0.0:1234->80/tcp            focused_wright
@@ -62,7 +62,7 @@ faba096575ac   mhiro2/kea-dhcp-server:latest   "/usr/local/sbin/kea…"   9 days
 
 Выполняем команду docker login, и вводим логин и пароль от нашего зарегистрированного аккаунта из docker-hub:
 ```
-[root@borg-server docker]# docker login
+docker login
 ```
 Login Succeeded
 ```
